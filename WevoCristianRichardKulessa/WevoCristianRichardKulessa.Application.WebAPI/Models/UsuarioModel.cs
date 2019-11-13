@@ -13,16 +13,16 @@ namespace WevoCristianRichardKulessa.Application.WebAPI.Models
         [Required(ErrorMessage = "CPF é obrigatório!")]
         [MinLength(11, ErrorMessage = "CPF aceita no mínimo 11 caracteres")]
         [MaxLength(11, ErrorMessage = "CPF aceita no máximo 11 caracteres")]
-        [RegularExpression(@"/\d{11}/", ErrorMessage = "CPF só aceita digitos numéricos")]
+        [RegularExpression(@"\d{11}", ErrorMessage = "CPF só aceita digitos numéricos")]
         public string CPF { get; set; }
         [Required(ErrorMessage = "E-mail é obrigatório!")]
         [EmailAddress(ErrorMessage = "Não é um formato de e-mail válido!")]
         [MaxLength(255, ErrorMessage = "E-mail aceita no máximo 255 caracteres")]
         public string EMail { get; set; }
         [Required(ErrorMessage = "Sexo é obrigatório!")]
-        [MinLength(11, ErrorMessage = "Sexo aceita no mínimo 1 caracter")]
-        [MaxLength(11, ErrorMessage = "Sexo aceita no máximo 1 caracter")]
-        [RegularExpression("/^M$|^F$|^O$/", ErrorMessage = "As opções de Sexo aceitas são M para \"Masculino\",  F para \"Feminino\",  O para \"Outro\"")]
+        [MinLength(1, ErrorMessage = "Sexo aceita no mínimo 1 caracter")]
+        [MaxLength(1, ErrorMessage = "Sexo aceita no máximo 1 caracter")]
+        [RegularExpression("^M$|^F$|^O$", ErrorMessage = "As opções de Sexo aceitas são M para \"Masculino\",  F para \"Feminino\",  O para \"Outro\"")]
         public string Sexo { get; set; }
         [Required(ErrorMessage = "Telefone é obrigatório!")]
         [Phone(ErrorMessage = "Não é um formato de telefone válido")]

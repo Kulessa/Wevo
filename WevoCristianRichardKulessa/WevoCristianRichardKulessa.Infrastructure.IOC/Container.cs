@@ -16,7 +16,7 @@ namespace WevoCristianRichardKulessa.Infrastructure.IOC
             //services.AddTransient<I, C>();
             //services.AddScoped<I, C>();
 
-            services.AddSingleton<IUsuarioRepository, UsuarioRepository>();
+            services.AddScoped<IUsuarioRepository, UsuarioRepository>();
             services.AddScoped<IUsuarioService, UsuarioService>();
             services.AddScoped<IUsuarioAppService, UsuarioAppService>();
         }

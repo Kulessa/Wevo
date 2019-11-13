@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -63,7 +64,7 @@ namespace WevoCristianRichardKulessa.Application.WebAPI.Controllers
                 return BadRequest(e);
             }
         }
-        [HttpPut("{id}")]
+        [HttpPut()]
         public IActionResult PutUsuario(UsuarioModel model)
         {
             if (!ModelState.IsValid)
@@ -72,7 +73,7 @@ namespace WevoCristianRichardKulessa.Application.WebAPI.Controllers
             }
             try
             {
-                if (appService.Exists(model.Id))
+                if (!appService.Exists(model.Id))
                 {
                     return NotFound();
                 }
@@ -87,6 +88,17 @@ namespace WevoCristianRichardKulessa.Application.WebAPI.Controllers
                     Telefone = model.Telefone
                 });
                 return Ok();
+            }
+            catch(DbUpdateConcurrencyException e)
+            {
+                if (!appService.Exists(model.Id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
             }
             catch (Exception e)
             {

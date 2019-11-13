@@ -54,5 +54,13 @@ namespace WevoCristianRichardKulessa.Infrastructure.Data.Repositories
             dbSet.Update(entity);
             context.SaveChanges();
         }
+        public virtual void DetachLocal(Func<TEntity, bool> predicate)
+        {
+            var local = dbSet.Local.Where(predicate).FirstOrDefault();
+            if (local != null)
+            {
+                context.Entry(local).State = EntityState.Detached;
+            }
+        }
     }
 }

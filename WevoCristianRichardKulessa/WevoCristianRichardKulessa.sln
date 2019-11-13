@@ -7,6 +7,30 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "WevoCristianRichardKulessa.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WevoCristianRichardKulessa.Application.WebAPI", "WevoCristianRichardKulessa.Application.WebAPI\WevoCristianRichardKulessa.Application.WebAPI.csproj", "{30B31E14-22AA-4A04-B9AA-E88E27F64136}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WevoCristianRichardKulessa.Application", "WevoCristianRichardKulessa.Application\WevoCristianRichardKulessa.Application.csproj", "{4135A0C6-5049-448C-8AFF-673809A52745}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WevoCristianRichardKulessa.Domain", "WevoCristianRichardKulessa.Domain\WevoCristianRichardKulessa.Domain.csproj", "{B9C34A00-BD2D-483B-BD45-DDA9D6C0DDA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WevoCristianRichardKulessa.Infrastructure.Data", "WevoCristianRichardKulessa.Infrastructure.Data\WevoCristianRichardKulessa.Infrastructure.Data.csproj", "{2595DA6A-67F7-4794-8EDA-7ABDA8F4F98C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WevoCristianRichardKulessa.Infrastructure.IOC", "WevoCristianRichardKulessa.Infrastructure.IOC\WevoCristianRichardKulessa.Infrastructure.IOC.csproj", "{C539FDE4-E70A-4986-8405-CEADA2FC71B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Application", "1-Application", "{1BA86093-D7BE-4726-AAFB-D3B6F8C59941}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Domain", "2-Domain", "{6BEFCE4F-1C29-4148-945D-C3B33BD48BC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Infrastructure", "3-Infrastructure", "{783BE791-9009-45E1-BCB9-26ED03E56D09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "X-Database", "X-Database", "{5E95AF2F-0A3C-48A9-996A-C230052F7FF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.1-Distributed Interface Layer", "1.1-Distributed Interface Layer", "{A46565A2-099F-4AA5-B625-46D7E93A62D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.2-Application layer", "1.2-Application layer", "{933C24D2-C2C3-472D-AF74-7F36C23EF46F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.1-Cross-Cutting", "3.1-Cross-Cutting", "{BBD2D911-4E87-4FC5-B33A-71233F3E4FD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.2-Data Persistence", "3.2-Data Persistence", "{1F218575-C441-45EC-A805-2ED40C6021E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,9 +47,37 @@ Global
 		{30B31E14-22AA-4A04-B9AA-E88E27F64136}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30B31E14-22AA-4A04-B9AA-E88E27F64136}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30B31E14-22AA-4A04-B9AA-E88E27F64136}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4135A0C6-5049-448C-8AFF-673809A52745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4135A0C6-5049-448C-8AFF-673809A52745}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4135A0C6-5049-448C-8AFF-673809A52745}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4135A0C6-5049-448C-8AFF-673809A52745}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9C34A00-BD2D-483B-BD45-DDA9D6C0DDA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9C34A00-BD2D-483B-BD45-DDA9D6C0DDA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9C34A00-BD2D-483B-BD45-DDA9D6C0DDA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9C34A00-BD2D-483B-BD45-DDA9D6C0DDA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2595DA6A-67F7-4794-8EDA-7ABDA8F4F98C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2595DA6A-67F7-4794-8EDA-7ABDA8F4F98C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2595DA6A-67F7-4794-8EDA-7ABDA8F4F98C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2595DA6A-67F7-4794-8EDA-7ABDA8F4F98C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C539FDE4-E70A-4986-8405-CEADA2FC71B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C539FDE4-E70A-4986-8405-CEADA2FC71B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C539FDE4-E70A-4986-8405-CEADA2FC71B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C539FDE4-E70A-4986-8405-CEADA2FC71B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FAC5CF5D-EEBD-4267-8933-934D37D34D9D} = {5E95AF2F-0A3C-48A9-996A-C230052F7FF9}
+		{30B31E14-22AA-4A04-B9AA-E88E27F64136} = {A46565A2-099F-4AA5-B625-46D7E93A62D8}
+		{4135A0C6-5049-448C-8AFF-673809A52745} = {933C24D2-C2C3-472D-AF74-7F36C23EF46F}
+		{B9C34A00-BD2D-483B-BD45-DDA9D6C0DDA3} = {6BEFCE4F-1C29-4148-945D-C3B33BD48BC3}
+		{2595DA6A-67F7-4794-8EDA-7ABDA8F4F98C} = {1F218575-C441-45EC-A805-2ED40C6021E2}
+		{C539FDE4-E70A-4986-8405-CEADA2FC71B1} = {BBD2D911-4E87-4FC5-B33A-71233F3E4FD9}
+		{A46565A2-099F-4AA5-B625-46D7E93A62D8} = {1BA86093-D7BE-4726-AAFB-D3B6F8C59941}
+		{933C24D2-C2C3-472D-AF74-7F36C23EF46F} = {1BA86093-D7BE-4726-AAFB-D3B6F8C59941}
+		{BBD2D911-4E87-4FC5-B33A-71233F3E4FD9} = {783BE791-9009-45E1-BCB9-26ED03E56D09}
+		{1F218575-C441-45EC-A805-2ED40C6021E2} = {783BE791-9009-45E1-BCB9-26ED03E56D09}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ECB5E509-E430-4DF7-9003-8EE0C5A3E64B}
